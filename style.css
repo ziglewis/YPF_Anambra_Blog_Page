@@ -340,6 +340,20 @@ height: auto;
   background-color: #6bc329;
 }
 
+.details-of-post {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax( 100px, 1fr));
+  color: yellow;
+}
+
+.details-of-post div{
+
+  margin-top: -5px;
+  border: 2px solid red;
+  height: 30px;
+ }
+
 
 #mother-blog-overall-container {
   margin: 0px;
