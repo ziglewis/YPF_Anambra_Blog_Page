@@ -309,12 +309,49 @@ height: auto;
 /* THE SECTION THREE OF GALLERY TEXT ENDS HERE AFTER THE HERO PAGE */
 
 
+/*  The section of the blog proper starts here */
+
+
+.blog-sorter-div {
+  
+
+  margin: 0px;
+  padding: 20px 12%;
+  border: 3px solid blueviolet;
+  text-align: center;
+
+}
+
+.blog-sorting-btn {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax( 100px, 1fr));
+}
+
+.blog-sorting-btns button {
+  min-width: 100px;
+  height: 40px;
+  margin-bottom: 3px;
+  border: none;
+  border-radius: 3px;
+
+}
+
+.blog-sorting-btns button:hover {
+  background-color: #6bc329;
+}
+
+
 #mother-blog-overall-container {
   margin: 0px;
   padding: 50px 12%;
   border: 3px solid #e1466c;
 }
 
+
+
+
+
+/*  The section of the blog proper ends here */
 
 
 
