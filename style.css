@@ -298,17 +298,21 @@ height: auto;
   animation: rain 2s linear infinite;
   }
   
-  .rain span {
-  display: inline-block;
-  animation: rain 2s linear infinite;
-  }
-  
+ 
+
+
  
 
 
 
 
 /* THE SECTION THREE OF GALLERY TEXT ENDS HERE AFTER THE HERO PAGE */
+
+
+.mother-blog-overall-container {
+  margin: 0px;
+  padding: 50px 12%;
+}
 
 
 
