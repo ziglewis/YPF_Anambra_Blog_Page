@@ -345,7 +345,7 @@ height: auto;
 
 .blog-sorting-btns button {
   min-width: 100px;
-  height: 40px;
+  height: 25px;
   margin-bottom: 3px;
   border: none;
   border-radius: 3px;
@@ -356,19 +356,30 @@ height: auto;
   background-color: #6bc329;
 }
 
-.details-of-post {
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax( 100px, 1fr));
-  color: yellow;
+.each-particular-blog-visible-content {
+
+  border: 2px solid goldenrod;
+  text-align: center;
+  box-sizing: border-box;
+  width:100%;
+  padding: 0px 10px;
+  line-height: 1rem;
+
+}
+.each-particular-blog-visible-content h3 {
+  margin-bottom: -10px; 
+}
+.each-particular-blog-visible-content h6 {
+  font-style: oblique;
+  text-transform: capitalize;
 }
 
-.details-of-post div{
 
-  margin-top: -5px;
-  /* border: 2px solid red; */
-  height: 30px;
- }
+
+
+
+
 
 
 #mother-blog-overall-container {
