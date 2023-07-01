@@ -104,5 +104,13 @@ let poUpOnAndOff = () => {
 //  All about events drop-down navbar ends here         29th-May-2023
 
 
+
+//  this next line of code controls the diapering of the greeting love emoji
       
-    
+    let myWave = document.getElementById("wave")    
+
+    let waveTimeOff = setTimeout(function(){myWave.textContent=""}, 4000)
+
+    let waveOpacity = setTimeout(function(){myWave.style.opacity="0"}, 3000)
+
+// //  this next line of code controls the diapering of the greeting love emoji ends here
