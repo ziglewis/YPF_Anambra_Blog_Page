@@ -350,7 +350,7 @@ height: auto;
 .details-of-post div{
 
   margin-top: -5px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 30px;
  }
 
