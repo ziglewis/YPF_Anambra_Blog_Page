@@ -325,7 +325,7 @@ height: auto;
 /* THE SECTION THREE OF GALLERY TEXT ENDS HERE AFTER THE HERO PAGE */
 
 
-/*  The section of the blog proper starts here */
+/*  The section of the visible on load blog proper starts here */
 
 
 .blog-sorter-div {
@@ -375,24 +375,44 @@ height: auto;
   text-transform: capitalize;
 }
 
-
-
-
-
-
-
-
 #mother-blog-overall-container {
   margin: 0px;
   padding: 50px 12%;
   border: 3px solid #e1466c;
 }
 
+/*  The section of the visible on load blog proper ends here */
+
+
+
+/*  The section of the hidden on load blog starts here */
+
+
+
+.each-particular-blog-image {
+  width: fit-content;
+  margin: 20px auto 40px;
+}
+
+.each-particular-blog-image img {
+  padding-top: -10px;
+  width: 500px;
+  height: 90%;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 5px;
+}
 
 
 
 
-/*  The section of the blog proper ends here */
+
+
+
+
+/*  The section of the hidden on load blog starts here */
+
 
 
 
