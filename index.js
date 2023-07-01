@@ -114,3 +114,27 @@ let poUpOnAndOff = () => {
     let waveOpacity = setTimeout(function(){myWave.style.opacity="0"}, 3000)
 
 // //  this next line of code controls the diapering of the greeting love emoji ends here
+
+
+
+
+
+let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content").length
+
+     let hideOrShowContent = (data) => {
+
+            data.addEventListener("click", toggleContent)
+            console.log("i got here")
+          }
+          
+    
+    let toggleContent = (data) => {
+        
+        
+        console.log(data.classList)
+        console.log("i got to level 3")
+        
+    }
+    
+    
+     document.querySelectorAll(".each-particular-blog-visible-content").forEach(hideOrShowContent)
