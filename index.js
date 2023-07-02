@@ -119,22 +119,27 @@ let poUpOnAndOff = () => {
 
 
 
+
 let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content").length
 
      let hideOrShowContent = (data) => {
 
-            data.addEventListener("click", toggleContent)
-            console.log("i got here")
-          }
-          
+            data.addEventListener("click", function() {
+            
+            let desiredInnerBlog = this.parentElement.children[1]
+            toggleContent(desiredInnerBlog)
+             }) 
+            }
+     
     
     let toggleContent = (data) => {
-        
-        
-        console.log(data.classList)
-        console.log("i got to level 3")
+         
+         if(data.style.display == "block") {
+             data.style.display = "none"
+             }else{data.style.display = "block"}
         
     }
     
     
      document.querySelectorAll(".each-particular-blog-visible-content").forEach(hideOrShowContent)
+     

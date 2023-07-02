@@ -404,9 +404,11 @@ height: auto;
   border-radius: 5px;
 }
 
+
 .each-particular-blog-hidden-content {
 
   padding: 10px 0px 100px;
+  display: none
   /* border: 2px solid purple; */
 }
 
