@@ -358,6 +358,16 @@ height: auto;
   background-color: #6bc329;
 }
 
+.blog-title span {
+
+  float: right;
+  transform: rotate(90deg);
+  transition: all ease 0.5s;
+  font-size: 25px;
+  
+
+}
+
 
 .each-particular-blog-visible-content {
 
