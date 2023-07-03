@@ -142,4 +142,7 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
     
     
      document.querySelectorAll(".each-particular-blog-visible-content").forEach(hideOrShowContent)
+
+
+    
      

@@ -349,6 +349,8 @@ height: auto;
   margin-bottom: 3px;
   border: none;
   border-radius: 3px;
+  background-color: #296a12;
+  color: #ffffff;
 
 }
 
@@ -378,7 +380,14 @@ height: auto;
 #mother-blog-overall-container {
   margin: 0px;
   padding: 50px 12%;
+  display: flex;
+  flex-direction: column-reverse;
   border: 3px solid #e1466c;
+  gap: 30px;
+}
+
+.blog-number, .blog-date {
+  color: #6bc329;
 }
 
 /*  The section of the visible on load blog proper ends here */
