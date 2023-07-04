@@ -369,9 +369,8 @@ height: auto;
   text-align: center;
   box-sizing: border-box;
   width:100%;
-  padding: 0px 10px;
+  padding: 20px 3% 0px;
   line-height: 1rem;
-
   border: 1px solid #f0f0f0;
   background-color: #f0f0f0;
   border-radius: 5px;
@@ -421,7 +420,7 @@ height: auto;
   height: 90%;
   max-width: 100%;
   box-sizing: border-box;
-  border: 2px solid #f0f0f0;
+  
   border-radius: 5px;
 }
 
@@ -431,9 +430,9 @@ height: auto;
   padding: 10px 0px 100px;
   display: none;
   color: #333333;
-  margin-top: -50px;
+  margin-top: -40px;
   background-color: #f0f0f0;
-  padding: 0px 3% 50px;
+  padding: 0px 5% 50px;
   
   /* border: 2px solid purple; */
 }
@@ -640,16 +639,7 @@ footer p{
     }
 
   
-    .all-photos{ 
-
-      padding: 50px 3% 150px;
-
-         }
-
-         .all-photos-Events{
-          padding: 50px 3% 100px;
-        }
-
+    
 
 
 }
