@@ -330,10 +330,11 @@ height: auto;
 
 .blog-sorter-div {
   
-
+  background-color: #f0f0f0;
+  color: #000;
   margin: 0px;
-  padding: 20px 12%;
-  border: 3px solid blueviolet;
+  padding: 2px 12% 25px;
+ 
   text-align: center;
 
 }
@@ -392,12 +393,14 @@ height: auto;
   padding: 50px 12%;
   display: flex;
   flex-direction: column-reverse;
-  border: 3px solid #e1466c;
+  
   gap: 30px;
+  
 }
 
 .blog-number, .blog-date {
-  color: #6bc329;
+  color: #296a12;
+  font-weight: 1000;
 }
 
 /*  The section of the visible on load blog proper ends here */
@@ -428,9 +431,9 @@ height: auto;
   padding: 10px 0px 100px;
   display: none;
   color: #333333;
-  
-  margin-top: -1px;
+  margin-top: -50px;
   background-color: #f0f0f0;
+  padding: 0px 3% 50px;
   
   /* border: 2px solid purple; */
 }
@@ -454,7 +457,10 @@ height: auto;
     display: flex;
     padding: 60px 12%;
     gap: 2%;
+    border-top: 1px solid white;
+   
 }
+
 
 .contact-us-items {
     width: 100%;
@@ -542,6 +548,7 @@ footer {
     height: fit-content;
     background-color: black;
     gap: 15px;
+   
 
 }
 
@@ -679,7 +686,7 @@ footer p{
                     }
 
     .contact-us {
-        padding: 60px 5%;
+        padding: 60px 3%;
     }
 
     #mother-blog-overall-container {
@@ -688,10 +695,19 @@ footer p{
      
     }
 
+    .blog-sorter-div {
+  
+    
+      padding: 2px 3% 25px;
+     
+      text-align: center;
+    
+    }
+
             footer {
                 
                 flex-direction: column-reverse;
-                padding: 10px 5% 30px;
+                padding: 10px 3% 30px;
                 column-gap: -15px;
                 align-items: flex-start;
                 gap: 5%;
