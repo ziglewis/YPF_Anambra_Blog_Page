@@ -145,4 +145,51 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
 
 
     
+
+      // HANDLING ALL ABOUT THE SORTING OF THE BLOG
+
+    let myAllBlogs = document.querySelectorAll(".each-particular-blog .blog-category")
+    
+    //  console.log(mySingleBlogs)
+    
+    let sortBlog = (data) => {
+        
+        myAllBlogs.forEach(function(eachBlog){
+            
+         console.log(eachBlog.textContent)
+         console.log(eachBlog.parentElement.parentElement)
+         
+         if (data.toLowerCase() == "all"){
+             eachBlog.parentElement.parentElement.style.display = "block"
+              } else if (eachBlog.textContent.toLowerCase().includes(data.toLowerCase())) {
+             console.log("yesoooooo")
+             eachBlog.parentElement.parentElement.style.display = "block"
+         } else {
+             console.log("nooooooo")
+             eachBlog.parentElement.parentElement.style.display = "none"
+         }
+         
+         
+         
+          
+        })
+        
+        
+        console.log(data)
+        
+    }   
+    
+    
+    
      
+    document.querySelectorAll(".blog-sorting-btns button").forEach(function(eachButton){
+        
+        let buttonValue = eachButton.textContent 
+        
+         eachButton.addEventListener("click", function(){
+             sortBlog(buttonValue)
+         })
+        
+    console.log(eachButton.textContent + 44)
+        
+    })
