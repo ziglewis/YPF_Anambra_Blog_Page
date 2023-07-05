@@ -380,10 +380,6 @@ height: auto;
 
 }
 
-.each-particular-blog-visible-content:hover {
-  background-color: #6bc329;
-}
-
 .each-particular-blog-visible-content h3 {
   margin-bottom: -10px; 
   text-transform: capitalize;
@@ -426,7 +422,8 @@ height: auto;
 
 .each-particular-blog-image {
   width: fit-content;
-  margin: 0px auto 40px;
+  margin: 0px auto 20px;
+  padding-top: 20px;
 }
 
 .each-particular-blog-image img {
@@ -444,7 +441,7 @@ height: auto;
   
   display: none;
   color: #333333;
-  margin-top: -40px;
+  margin-top: -10px;
   background-color: #f0f0f0;
   padding: 0px 5% 50px;
   line-height: 2rem;
