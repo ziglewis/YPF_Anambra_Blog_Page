@@ -395,7 +395,7 @@ height: auto;
   flex-direction: column-reverse;
   background-color: #ffffff;
   
-  gap: 30px;
+  gap: 40px;
   
 }
 
@@ -436,8 +436,6 @@ height: auto;
   background-color: #f0f0f0;
   padding: 0px 5% 50px;
 }
-
-
 
 
 
