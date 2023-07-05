@@ -379,6 +379,11 @@ height: auto;
   
 
 }
+
+.each-particular-blog-visible-content:hover {
+  background-color: #6bc329;
+}
+
 .each-particular-blog-visible-content h3 {
   margin-bottom: -10px; 
   text-transform: capitalize;
@@ -387,6 +392,13 @@ height: auto;
   font-style: oblique;
   text-transform: capitalize;
 }
+
+.each-particular-blog-visible-content h5 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 
 #mother-blog-overall-container {
   margin: 0px;
@@ -435,6 +447,7 @@ height: auto;
   margin-top: -40px;
   background-color: #f0f0f0;
   padding: 0px 5% 50px;
+  line-height: 2rem;
 }
 
 

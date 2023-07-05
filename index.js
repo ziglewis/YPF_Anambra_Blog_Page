@@ -129,7 +129,9 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
             let desiredInnerBlog = this.parentElement.children[1]
             toggleContent(desiredInnerBlog)
              }) 
-            }
+            }    
+            
+            // this dot parent element at index0 dot child at index3 to get to the visible h5
      
     
     let toggleContent = (data) => {
