@@ -387,6 +387,7 @@ height: auto;
 .each-particular-blog-visible-content h6 {
   font-style: oblique;
   text-transform: capitalize;
+  margin-top: -10px;
 }
 
 .each-particular-blog-visible-content h5 {
