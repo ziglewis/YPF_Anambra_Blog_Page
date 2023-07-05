@@ -390,9 +390,10 @@ height: auto;
 
 #mother-blog-overall-container {
   margin: 0px;
-  padding: 50px 12%;
+  padding: 50px 12% 100px;
   display: flex;
   flex-direction: column-reverse;
+  background-color: #ffffff;
   
   gap: 30px;
   
@@ -428,7 +429,7 @@ height: auto;
 
 .each-particular-blog-hidden-content {
 
-  padding: 10px 0px 100px;
+  
   display: none;
   color: #333333;
   margin-top: -40px;
@@ -680,7 +681,7 @@ footer p{
 
     #mother-blog-overall-container {
   
-      padding: 50px 3%;
+      padding: 50px 3% 100px;
      
     }
 
