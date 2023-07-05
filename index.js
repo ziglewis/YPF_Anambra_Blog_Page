@@ -156,16 +156,16 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
         myAllBlogs.forEach(function(eachBlog){
             
          if (data.toLowerCase() == "all"){ 
-             eachBlog.parentElement.parentElement.style.display = "block"
+             eachBlog.parentElement.parentElement.parentElement.style.display = "block"
               } else if (eachBlog.textContent.toLowerCase().includes(data.toLowerCase())) {
-             eachBlog.parentElement.parentElement.style.display = "block"
-         } else { eachBlog.parentElement.parentElement.style.display = "none" }
+             eachBlog.parentElement.parentElement.parentElement.style.display = "block"
+         } else { eachBlog.parentElement.parentElement.parentElement.style.display = "none" }
          
              })  
              
              }   
     
-             
+
     document.querySelectorAll(".blog-sorting-btns button").forEach(function(eachButton){
         
          let buttonValue = eachButton.textContent 
