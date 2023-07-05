@@ -162,6 +162,11 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
          } else { eachBlog.parentElement.parentElement.parentElement.style.display = "none" }
          
              })  
+
+             document.querySelectorAll(".each-particular-blog-hidden-content").forEach(function(data){
+                     if(data.style.display == "block") {
+                    data.style.display = "none"}  //this code will close every open blog whenever the blog is sorted
+             })
              
              }   
     
