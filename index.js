@@ -135,10 +135,15 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
      
     
     let toggleContent = (data) => {
+
+        let introductionWord = data.parentElement.children[0].children[2]
          
          if(data.style.display == "block") {
              data.style.display = "none"
-             }else{data.style.display = "block"}
+             introductionWord.style.display = "block"
+             }else{data.style.display = "block"
+             introductionWord.style.display = "none"
+            }
         
     }
     
@@ -167,7 +172,7 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
 
              document.querySelectorAll(".each-particular-blog-hidden-content").forEach(function(data){
                      if(data.style.display == "block") {
-                    data.style.display = "none"}  //this code will close every open blog whenever the blog is sorted
+                    toggleContent(data)}  //this code will close every open blog whenever the blog is sorted
              })
              
              }   
