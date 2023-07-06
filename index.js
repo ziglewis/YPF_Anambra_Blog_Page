@@ -105,7 +105,7 @@ let poUpOnAndOff = () => {
 
 
 
-//  this next line of code controls the diapering of the greeting love emoji
+//  THIS NEXT LINE OF CODE CONTROLS THE DISAPPEARING OF THE LOVE GREETING EMOJI  
       
     let myWave = document.getElementById("wave")    
 
@@ -113,42 +113,61 @@ let poUpOnAndOff = () => {
 
     let waveOpacity = setTimeout(function(){myWave.style.opacity="0"}, 3000)
 
-// //  this next line of code controls the diapering of the greeting love emoji ends here
+ // the code for diapering of the greeting love emoji ends here
 
 
 
 
-
+// HANDLING ALL ABOUT SHOWING EXTRA CONTENT ON CLICKING ANY BLOG VISIBLE PORTION
 
 let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content").length
 
      let hideOrShowContent = (data) => {
 
-            data.addEventListener("click", function() {
+            data.addEventListener("click", function() {    //this happens second, attaching eventlistiner to all of the class at once 
             
-            let desiredInnerBlog = this.parentElement.children[1]
-            toggleContent(desiredInnerBlog)
-             }) 
-            }    
+            let desiredInnerBlog = this.parentElement.children[1]  //I am using each class to get their corresponding hidden content and saving it into desiredInnerBlog
             
-            // this dot parent element at index0 dot child at index3 to get to the visible h5
+            
+            toggleContent(desiredInnerBlog) //therefore whenever they are now clicked, they will call the toggleContent function(passing in the desired inner hidden content, so the right guy is toggled)
+            
+                    
+        
+        }) 
+            }      
+            
+            
+            function scrollToTop(div) {  //this will bring any clicked blog to the top
+                
+                div.scrollIntoView({
+                  behavior: "instant",
+                })
+              }
+            
      
     
     let toggleContent = (data) => {
 
-        let introductionWord = data.parentElement.children[0].children[2]
+        let introductionWord = data.parentElement.children[0].children[2] //because I want the short initial content of the hidden div showing in the visible div to disappear
          
          if(data.style.display == "block") {
              data.style.display = "none"
              introductionWord.style.display = "block"
-             }else{data.style.display = "block"
+             }else{
+                data.style.display = "block"
              introductionWord.style.display = "none"
+             scrollToTop(data.parentElement.children[0]) // this code is her so the scrolling only happens when you click to open the hidden content ans when you close it, it does not move
             }
         
     }
     
     
-     document.querySelectorAll(".each-particular-blog-visible-content").forEach(hideOrShowContent)
+     document.querySelectorAll(".each-particular-blog-visible-content").forEach(hideOrShowContent)  //this happens first and i am looping through all visible blog content
+
+    // HANDLING ALL ABOUT SHOWING EXTRA CONTENT ON CLICKING ANY BLOG VISIBLE PORTION ENDS HERE
+
+
+
 
 
     
@@ -185,3 +204,7 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
              sortBlog(buttonValue) })
         })
 
+
+
+
+      

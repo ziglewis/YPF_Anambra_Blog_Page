@@ -367,6 +367,7 @@ height: auto;
   border-radius: 5px;
   color: rgba(56, 56, 56);
   cursor: pointer;
+ 
   
 
 }
@@ -398,7 +399,6 @@ height: auto;
   display: flex;
   flex-direction: column-reverse;
   background-color: #ffffff;
-  
   gap: 40px;
   
 }
@@ -442,6 +442,7 @@ height: auto;
   background-color: #f0f0f0;
   padding: 0px 5% 50px;
   line-height: 2rem;
+  
 }
 
 /* .each-particular-blog-hidden-content {
