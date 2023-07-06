@@ -385,9 +385,8 @@ height: auto;
   
   text-transform:uppercase;
   color: #6bc329;
-  font-family: Raleway;
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 .each-particular-blog-visible-content h6 {
 
