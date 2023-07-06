@@ -353,6 +353,12 @@ height: auto;
 
 
 
+.each-particular-blog {
+  
+  height: fit-content;
+
+}
+
 .each-particular-blog-visible-content {
 
  
@@ -392,12 +398,22 @@ height: auto;
   
 }
 
+.blog-title span {
+  float: right;
+  font-size: larger;
+  font-weight: 900;
+  display: none;
+  border: 1px solid #296a12;
+  text-align: right;
+  padding: 1px;
+}
+
 
 #mother-blog-overall-container {
   margin: 0px;
   padding: 50px 12% 100px;
-  display: flex;
-  flex-direction: column-reverse;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax( 100%, 1fr));
   background-color: #ffffff;
   gap: 40px;
   
@@ -445,11 +461,6 @@ height: auto;
   
 }
 
-/* .each-particular-blog-hidden-content {
-
-left: 0px;
-  
-} */
 
 
 

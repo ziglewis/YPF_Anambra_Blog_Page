@@ -137,26 +137,33 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
             }      
             
             
-            function scrollToTop(div) {  //this will bring any clicked blog to the top
+            // function scrollToTop(div) {  //this will bring any clicked blog to the top
                 
-                div.scrollIntoView({
-                  behavior: "instant",
-                })
-              }
+            //     div.scrollIntoView({
+            //       behavior: "instant",
+            //     })
+            //   }
             
      
     
     let toggleContent = (data) => {
 
         let introductionWord = data.parentElement.children[0].children[2] //because I want the short initial content of the hidden div showing in the visible div to disappear
-         
+        let   mySpan =   data.parentElement.children[0].children[0].children[0] 
+    
+
+
          if(data.style.display == "block") {
              data.style.display = "none"
              introductionWord.style.display = "block"
+            //  mySpan.style.color = "blue"
+             mySpan.style.display = "none"
              }else{
                 data.style.display = "block"
              introductionWord.style.display = "none"
-             scrollToTop(data.parentElement.children[0]) // this code is her so the scrolling only happens when you click to open the hidden content ans when you close it, it does not move
+            //  mySpan.style.color = "red"
+             mySpan.style.display = "block"
+            //  scrollToTop(data.parentElement.children[0]) // this code is her so the scrolling only happens when you click to open the hidden content ans when you close it, it does not move
             }
         
     }
