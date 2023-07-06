@@ -413,8 +413,9 @@ height: auto;
 }
 
 .blog-number, .blog-date {
-  color: #296a12;
+  
   font-weight: 1000;
+  letter-spacing: 0.5px;
 }
 
 /*  The section of the visible on load blog proper ends here */
