@@ -414,6 +414,7 @@ height: auto;
   padding: 50px 12% 100px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax( 100%, 1fr));
+  grid-auto-flow: row dense;
   background-color: #ffffff;
   gap: 40px;
   
