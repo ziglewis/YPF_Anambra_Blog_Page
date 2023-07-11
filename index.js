@@ -221,11 +221,15 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
     
      let newsLetterForm = document.querySelector(".news-letter form")
 
-    newsLetterForm.addEventListener("submit", clearForm)
+     let newsLetterSubmitBtn = document.querySelector("#subscribe")
 
+    newsLetterSubmitBtn.addEventListener("click", function(){
 
+        newsLetterForm.submit(); // Submit the form
+        newsLetterForm.reset();  // Reset all form data
+        return false; // Prevent page refresh
 
+    })
 
-    // setTimeout(eachForm.reset(), 1000)
 
       
