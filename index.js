@@ -217,12 +217,12 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
 
     let clearForm = eachForm => {
         
-        setTimeout(eachForm.reset(), 1000)
+        eachForm.reset()
     }
     
      let newsLetterForm = document.querySelector(".news-letter form")
 
-    newsLetterForm.addEventListener("click", clearForm)
+    newsLetterForm.addEventListener("submit", clearForm)
 
 
 
