@@ -216,7 +216,7 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
     //HANDLING THE CLEARING OF THE NEWSLETTER SUBSCRIPTION FORM AFTER SUBMISSION
 
     let clearForm = eachForm => {
-        eachForm.reset()
+        setTimeout(eachForm.reset(), 1000)
     }
     
      let newsLetterForm = document.querySelector(".news-letter form")
@@ -226,11 +226,5 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
 
 
 
-
-    const form = document.querySelector("form");
-form.addEventListener("submit", function() {
-  // Call the reset() method on the form
-  form.reset();
-});
 
       
