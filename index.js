@@ -215,9 +215,6 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
 
     //HANDLING THE CLEARING OF THE NEWSLETTER SUBSCRIPTION FORM AFTER SUBMISSION
 
-    let clearForm = (eachForm) => {
-        eachForm.reset()
-    }
     
      let newsLetterForm = document.querySelector(".news-letter form")
 
