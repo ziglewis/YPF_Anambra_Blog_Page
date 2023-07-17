@@ -220,22 +220,42 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
 
      let newsLetterSubmitBtn = document.querySelector("#subscribe")
 
-    newsLetterSubmitBtn.addEventListener("click", function(){
+    // newsLetterSubmitBtn.addEventListener("click", function(){
 
-        newsLetterForm.submit(); // Submit the form
-        newsLetterForm.reset();  // Reset all form data
-        return false; // Prevent page refresh
+    //     newsLetterForm.submit(); // Submit the form
+    //     newsLetterForm.reset();  // Reset all form data
+    //     return false; // Prevent page refresh
 
-    })
+    // })
 
-    window.onpopstate = function(event) {
-        // Check if the URL has a hash.
-        if (!window.location.hash) {
-          // If not, add a hash and reload the page.
-          window.location = window.location + '#loaded';
-          window.location.reload();
-        }
-      };
+    // window.onpopstate = function(event) {
+       
+    //       window.location.reload()
+    //      newsLetterForm.reset()
+    
+    //   };
 
+    //   window.addEventListener("popstate", () => {
 
+        
+    //     newsLetterForm.reset()
+    //     newsLetterSubmitBtn.style.color = "blue"
+        
+      
+    //   }  );
+
+    // newsLetterForm.addEventListener("load", myFunction)
+
+    function myFunction() {
+        // newsLetterSubmitBtn.style.color = "blue"
+        newsLetterForm.reset()
+
+    
+      }
+
+      setTimeout(myFunction,100)
+
+    //  myFunction()
+
+     
       
