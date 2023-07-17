@@ -220,42 +220,15 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
 
      let newsLetterSubmitBtn = document.querySelector("#subscribe")
 
-    // newsLetterSubmitBtn.addEventListener("click", function(){
-
-    //     newsLetterForm.submit(); // Submit the form
-    //     newsLetterForm.reset();  // Reset all form data
-    //     return false; // Prevent page refresh
-
-    // })
-
-    // window.onpopstate = function(event) {
-       
-    //       window.location.reload()
-    //      newsLetterForm.reset()
-    
-    //   };
-
-    //   window.addEventListener("popstate", () => {
-
-        
+    // function myFunction() {
     //     newsLetterForm.reset()
-    //     newsLetterSubmitBtn.style.color = "blue"
-        
-      
-    //   }  );
-
-    // newsLetterForm.addEventListener("load", myFunction)
-
-    function myFunction() {
-        // newsLetterSubmitBtn.style.color = "blue"
-        newsLetterForm.reset()
-
+    //   }
     
-      }
+    //   setTimeout(myFunction,100)
 
-      setTimeout(myFunction,100)
-
-    //  myFunction()
-
+      window.addEventListener("pageshow", function() {
+        newsLetterForm.reset()
+        
+      });
      
       
