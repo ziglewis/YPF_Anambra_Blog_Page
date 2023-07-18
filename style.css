@@ -605,7 +605,7 @@ footer p{
     
 }
 
-.social-icons div:nth-child(1):hover, .social-icons div:nth-child(2):hover, .social-icons div:nth-child(3):hover, .social-icons div:nth-child(4):hover { 
+.social-icons div:nth-child(1):hover, .social-icons div:nth-child(2):hover, .social-icons div:nth-child(3):hover, .social-icons div:nth-child(4):hover, .social-icons div:nth-child(5):hover { 
     
     transition: all ease 0.5s;
     background-color: rgba(0, 0, 0, 0.815);
@@ -637,6 +637,11 @@ footer p{
     transition: all ease 1s;
     background-color: #c4302b;
     border: 1px solid #c4302b ;
+}
+.social-icons div:nth-child(5) {
+  transition: all ease 1s;
+  background-color: #296a12;
+  border: 1px solid #296a12 ;
 }
 /* THE FINAL SECTION OF THE FOOTER ENDS HERE */
 
