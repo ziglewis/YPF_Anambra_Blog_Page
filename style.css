@@ -616,32 +616,32 @@ footer p{
     color: #ffffff;
 }
 .social-icons div:nth-child(1) {
-    transition: all ease 1s;
-    background-color: #527dbd;
-    border: 1px solid   #527dbd ;
+  transition: all ease 1s;
+  background-color: #527dbd;
+  border: 1px solid   #527dbd ;
 }
 
 .social-icons div:nth-child(2) {
-    transition: all ease 1s;
-    background-color: #1da1f2;
-    border: 1px solid   #1da1f2 ;
+  transition: all ease 1s;
+  background-color: #1da1f2;
+  border: 1px solid   #1da1f2 ;
 }
 
 .social-icons div:nth-child(3) {
-    transition: all ease 1s;
-    background-color: #e1466c;
-    border: 1px solid  #e1466c ;
+  transition: all ease 1s;
+  background-color: #e1466c;
+  border: 1px solid  #e1466c ;
 }
 
 .social-icons div:nth-child(4) {
-    transition: all ease 1s;
-    background-color: #c4302b;
-    border: 1px solid #c4302b ;
+  transition: all ease 1s;
+  background-color: #229ED9;
+  border: 1px solid #229ED9;
 }
 .social-icons div:nth-child(5) {
-  transition: all ease 1s;
-  background-color: #296a12;
-  border: 1px solid #296a12 ;
+transition: all ease 1s;
+background-color: #25D366;
+border: 1px solid #25D366 ;
 }
 /* THE FINAL SECTION OF THE FOOTER ENDS HERE */
 
