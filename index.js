@@ -220,15 +220,39 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
 
      let newsLetterSubmitBtn = document.querySelector("#subscribe")
 
-    // function myFunction() {
-    //     newsLetterForm.reset()
-    //   }
-    
-    //   setTimeout(myFunction,100)
-
       window.addEventListener("pageshow", function() {
         newsLetterForm.reset()
         
       });
      
       
+// controlling the linking of the blogs. so that when spiritual or any other blog is clicked in a different page, it will land you in the blog and sort the blog adequately according to the blog you selected.
+
+      let healthBlog = false;
+      let technologyBlog = false;
+      let relationshipBlog= false;
+      let spiritualBlog = false;
+      let businessBlog = false;
+      let motivationBlog = false;
+
+
+// Show the cat image if the onlyCat variable is true.
+if (healthBlog) {
+    sortBlog(health)
+
+  } else if(technologyBlog)  {
+    sortBlog(technology)
+
+} else if (relationshipBlog) {
+    sortBlog(relationship)
+
+} else if (spiritualBlog) {
+    sortBlog(spiritual)
+
+} else if (businessBlog) {
+    sortBlog(business)
+
+} else if (motivationBlog) {
+    sortBlog(motivation)
+
+}
