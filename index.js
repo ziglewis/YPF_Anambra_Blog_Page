@@ -238,21 +238,21 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
 
 // Show the cat image if the onlyCat variable is true.
 if (healthBlog) {
-    sortBlog(health)
+    sortBlog("health")
 
   } else if(technologyBlog)  {
-    sortBlog(technology)
+    sortBlog("technology")
 
 } else if (relationshipBlog) {
-    sortBlog(relationship)
+    sortBlog("relationship")
 
 } else if (spiritualBlog) {
-    sortBlog(spiritual)
+    sortBlog("spiritual")
 
 } else if (businessBlog) {
-    sortBlog(business)
+    sortBlog("business")
 
 } else if (motivationBlog) {
-    sortBlog(motivation)
+    sortBlog("motivation")
 
 }
