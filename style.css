@@ -342,11 +342,9 @@ height: auto;
   border-radius: 3px;
   background-color: #296a12;
   color: #ffffff;
-
-
 }
 
-.blog-sorting-btns button:hover {
+.blog-sorting-btns button:nth-child(1) {
   background-color: #6bc329;
 }
 

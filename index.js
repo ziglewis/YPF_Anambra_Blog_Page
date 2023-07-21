@@ -182,6 +182,7 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
         // HANDLING ALL ABOUT THE SORTING OF THE BLOG
 
     let myAllBlogs = document.querySelectorAll(".each-particular-blog .blog-category")
+    let allMyBlogButtons = document.querySelectorAll(".blog-sorting-btns button")
     
     
     let sortBlog = (data) => {
@@ -202,14 +203,26 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
              })
              
              }   
+
+
+             let blogButtonActiveIndictor = (selectedBlogCategory) => {
+                allMyBlogButtons.forEach(function(eachButton){   // this code controls the background color to indicate each active blog category
+                    if (selectedBlogCategory == eachButton.textContent) {
+                        eachButton.style.backgroundColor = " #6bc329"
+                    } else { eachButton.style.backgroundColor = "#296a12"}
+                 })
+             }
     
 
-    document.querySelectorAll(".blog-sorting-btns button").forEach(function(eachButton){
+             allMyBlogButtons.forEach(function(eachButton){
         
-         let buttonValue = eachButton.textContent 
+         let buttonCategoryValue = eachButton.textContent      //get the text content to know category of each button
+
          eachButton.addEventListener("click", function(){
-             sortBlog(buttonValue) })
+             sortBlog(buttonCategoryValue)                           //add an event listener to it passing in the blog category already saved to properly sort the blog based on that category
+             blogButtonActiveIndictor(buttonCategoryValue)
         })
+    })
 
 
 
@@ -226,33 +239,30 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
       });
      
       
-// controlling the linking of the blogs. so that when spiritual or any other blog is clicked in a different page, it will land you in the blog and sort the blog adequately according to the blog you selected.
+// controlling the linking of the blogs. so that when spiritual or any other blog is clicked in a different page, it will land you in the blog and sort the blog adequately according to the blog category you selected in the previous page.
 
-      let healthBlog = false;
-      let technologyBlog = false;
-      let relationshipBlog= false;
-      let spiritualBlog = false;
-      let businessBlog = false;
-      let motivationBlog = false;
+let sortBlogByLink = (category) => { 
+    sortBlog(category)
+    blogButtonActiveIndictor(category)
+}
 
 
-// Show the blog content that is set to true on click from any link is true.
 if (window.location.search.includes("?healthBlog=true")) {
-    sortBlog("health")
+    sortBlogByLink("health")
 
   } else if(window.location.search.includes("?technologyBlog=true"))  {
-    sortBlog("technology")
+    sortBlogByLink("technology")
 
 } else if (window.location.search.includes("?relationshipBlog=true")) {
-    sortBlog("relationship")
+    sortBlogByLink("relationship")
 
 } else if (window.location.search.includes("spiritualBlog=true")) {
-    sortBlog("spiritual")
+    sortBlogByLink("spiritual")
 
 } else if (window.location.search.includes("?businessBlog=true")) {
-    sortBlog("business")
+    sortBlogByLink("business")
 
 } else if (window.location.search.includes("?motivationBlog=true")) {
-    sortBlog("motivation")
+    sortBlogByLink("motivation")
 
 }
