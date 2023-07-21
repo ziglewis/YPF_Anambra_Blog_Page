@@ -236,23 +236,23 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
       let motivationBlog = false;
 
 
-// Show the cat image if the onlyCat variable is true.
-if (healthBlog) {
+// Show the blog content that is set to true on click from any link is true.
+if (window.location.search.includes("?healthBlog=true")) {
     sortBlog("health")
 
-  } else if(technologyBlog)  {
+  } else if(window.location.search.includes("?technologyBlog=true"))  {
     sortBlog("technology")
 
-} else if (relationshipBlog) {
+} else if (window.location.search.includes("?relationshipBlog=true")) {
     sortBlog("relationship")
 
-} else if (spiritualBlog) {
+} else if (window.location.search.includes("spiritualBlog=true")) {
     sortBlog("spiritual")
 
-} else if (businessBlog) {
+} else if (window.location.search.includes("?businessBlog=true")) {
     sortBlog("business")
 
-} else if (motivationBlog) {
+} else if (window.location.search.includes("?motivationBlog=true")) {
     sortBlog("motivation")
 
 }
