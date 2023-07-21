@@ -207,7 +207,7 @@ let myBlogs = document.querySelectorAll(".each-particular-blog-visible-content")
 
              let blogButtonActiveIndictor = (selectedBlogCategory) => {
                 allMyBlogButtons.forEach(function(eachButton){   // this code controls the background color to indicate each active blog category
-                    if (selectedBlogCategory.toLowerCase() == eachButton.textContent.toLocaleLowerCase()) {
+                    if (selectedBlogCategory.toLowerCase() == eachButton.textContent.toLowerCase()) {
                         eachButton.style.backgroundColor = " #6bc329"
                     } else { eachButton.style.backgroundColor = "#296a12"}
                  })
